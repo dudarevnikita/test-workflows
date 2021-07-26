@@ -11,7 +11,8 @@
   "require": {
     "php": ">=7.3",
     "ext-json": "*",
-    "squizlabs/php_codesniffer": "3.5.1",
+    "squizlabs/php_codesniffer": "3.6.0",
+    "overtrue/phplint": "^2.0",
     "composer/installers": "^1.9"
   },
   "autoload": {
@@ -22,5 +23,10 @@
   "config": {
     "preferred-install": "dist",
     "optimize-autoloader": true
+  },
+  "scripts": {
+    "phpcs": "phpcs --standard=PSR12 app/",
+    "phpcbf": "phpcbf --standard=PSR12 app/",
+    "lint": "phplint --no-cache app/"
   }
 }
