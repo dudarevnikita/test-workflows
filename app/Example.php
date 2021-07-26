@@ -16,6 +16,6 @@ class Example
     {
         echo 123;
 
-        $this_is_error = 123
+        $this_is_error = 123;
     }
 }
