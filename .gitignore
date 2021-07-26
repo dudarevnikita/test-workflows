@@ -1,0 +1,11 @@
+.idea
+.DS_Store
+.vscode/
+banners
+imgs
+*.sh
+*.log
+
+# Composer files
+composer.phar
+/vendor/
